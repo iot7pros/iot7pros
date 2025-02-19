@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Mohit Bhoite Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        },
+                    },
+                    fontFamily: {
+                        'display': ['"Playfair Display"', 'serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-body">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="w-full py-12 bg-gray-50 dark:bg-gray-900 mt-24">
+        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-display font-bold text-gray-900 dark:text-white mb-12 text-center">Frequently Asked Questions</h1>
+            
+            <!-- FAQ Section -->
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-display font-semibold text-gray-900 dark:text-white mb-3">What materials do you use in your sculptures?</h3>
+                    <p class="text-gray-600 dark:text-gray-400">I primarily work with brass, copper, and electronic components. Each sculpture is carefully crafted using a combination of traditional metalworking techniques and modern electronic elements to create unique, functional art pieces.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-display font-semibold text-gray-900 dark:text-white mb-3">Do you accept custom commissions?</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Yes, I do accept custom commissions for both sculptures and electronic projects. Each piece is uniquely designed to meet your specific requirements while maintaining my signature aesthetic and technical standards.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-display font-semibold text-gray-900 dark:text-white mb-3">How long does it take to complete a sculpture?</h3>
+                    <p class="text-gray-600 dark:text-gray-400">The timeframe varies depending on the complexity of the piece. Typically, a sculpture takes 4-6 weeks from concept to completion. Custom projects may take longer based on specific requirements and current workload.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-display font-semibold text-gray-900 dark:text-white mb-3">Do you ship internationally?</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Yes, I ship worldwide. Each piece is carefully packaged to ensure safe delivery. Shipping costs and timeframes vary by location. Please contact me for specific shipping details to your region.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-display font-semibold text-gray-900 dark:text-white mb-3">Are your sculptures interactive?</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Many of my sculptures feature interactive elements through LEDs, sensors, or other electronic components. Each piece is designed to create a unique experience while maintaining functionality and artistic integrity.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:outline-none z-50" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Component scripts -->
+    <script src="js/components.js"></script>
+    <script src="js/loadComponents.js"></script>
+    <script>
+        loadComponent('header', 'header');
+        loadComponent('footer', 'footer');
+        setActiveNavLink('faq.html');
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

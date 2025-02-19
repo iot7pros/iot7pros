@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Bhoite Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        },
+                    },
+                    fontFamily: {
+                        'display': ['"Playfair Display"', 'serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 font-body">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="w-full py-12 bg-gray-50 dark:bg-gray-900 mt-24">
+        <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Left Image -->
+                <div class="relative group cursor-pointer overflow-hidden">
+                    <img src="images\2022-highlights-Large-uai-864x1080.png" 
+                         alt="LED Circuit Board with Purple Light" 
+                         class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-8 py-3 rounded-full shadow-lg transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-full">
+                        <h3 class="text-xl font-display font-semibold text-primary-800 dark:text-white">Sculptures</h3>
+                    </div>
+                </div>
+                <!-- Right Image -->
+                <div class="relative group cursor-pointer overflow-hidden">
+                    <img src="images\lightbar-header-uai-533x667.png" 
+                         alt="Collection of Electronic Art Projects" 
+                         class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-8 py-3 rounded-full shadow-lg transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-full">
+                        <h3 class="text-xl font-display font-semibold text-primary-800 dark:text-white">Projects</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 dark:bg-primary-400 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-700 focus:outline-none z-50" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Component scripts -->
+    <script src="js/components.js"></script>
+    <script src="js/loadComponents.js"></script>
+    <script>
+        loadComponent('header', 'header');
+        loadComponent('footer', 'footer');
+        setActiveNavLink('index.html'); // Change this to 'about.html' or 'faq.html' for respective pages
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
