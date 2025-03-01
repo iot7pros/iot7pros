@@ -1,7 +1,7 @@
 // Header component HTML
 const headerHTML = `
 <header class="w-full bg-white dark:bg-gray-900 shadow-sm fixed top-0 left-0 z-50">
-    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <img src="images/3D.svg" alt="3Dpros iOT" class="w-20 h-20">
@@ -42,7 +42,7 @@ const headerHTML = `
             <!-- Header with different background -->
             <div class="bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
                 <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="py-6 flex justify-between items-center">
+                    <div class="flex justify-between items-center">
                         <a href="index.html" class="flex items-center">
                             <img src="images/3D.svg" alt="3Dpros iOT" class="w-20 h-20">
                         </a>
