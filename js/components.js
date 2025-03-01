@@ -3,7 +3,9 @@ const headerHTML = `
 <header class="w-full bg-white dark:bg-gray-900 shadow-sm fixed top-0 left-0 z-50">
     <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <nav class="flex justify-between items-center">
-            <div class="text-2xl font-display font-bold text-primary-800 dark:text-primary-400"><a href="index.html">LOGO</a></div>
+            <a href="index.html" class="flex items-center">
+                <img src="images/3D.svg" alt="3Dpros iOT" class="w-20 h-20">
+            </a>
             
             <div class="flex items-center space-x-4">
                 <!-- Dark mode toggle -->
@@ -41,7 +43,9 @@ const headerHTML = `
             <div class="bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
                 <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="py-6 flex justify-between items-center">
-                        <div class="text-2xl font-display font-bold text-primary-800 dark:text-primary-400"><a href="index.html">LOGO</a></div>
+                        <a href="index.html" class="flex items-center">
+                            <img src="images/3D.svg" alt="3Dpros iOT" class="w-20 h-20">
+                        </a>
                         <!-- Close button -->
                         <button id="mobile-menu-close" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none">
                             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -86,7 +90,7 @@ const footerHTML = `
         <!-- Copyright and Social Icons -->
         <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
             <div class="text-gray-400 mb-4 md:mb-0 font-light">
-                2025 MOHIT BHOITE. All rights reserved
+                2025 3Dpros iOT. All rights reserved
             </div>
             <div class="flex space-x-6">
                 <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors"><i class="fab fa-twitter"></i></a>
