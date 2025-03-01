@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3Dpros iOT</title>
+    <title>Gonggi - 3Dpros iOT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,26 +57,47 @@
     <!-- Main Content -->
     <main class="w-full py-12 bg-gray-50 dark:bg-gray-900 mt-24">
         <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Left Image -->
-                <div class="relative group cursor-pointer overflow-hidden">
-                    <img src="images/gonggi/gonggi.jpg" 
-                         alt="Collection of Electronic Art Projects" 
-                         class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-8 py-3 rounded-full shadow-lg transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-full">
-                        <a href="gonggi.html" class="text-gray-900 dark:text-white font-medium">Gonggi</a>
-                    </div>
-                </div>
-                <!-- Right Image -->
-                <div class="relative group cursor-pointer overflow-hidden">
-                    <img src="images/art_lamp/art_lamp_yellow.jpg" 
-                         alt="LED Circuit Board with Purple Light"
-                         class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm px-8 py-3 rounded-full shadow-lg transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-full">
-                        <a href="lamp.html" class="text-gray-900 dark:text-white font-medium">Art Lamp</a>
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Grid Item 1 -->
+                <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+                    <img src="images/gonggi/gonggi.jpg"
+                         alt="Sculpture 1" 
+                         class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                        <h3 class="text-xl font-display font-semibold text-white">Circuit Constellation</h3>
                     </div>
                 </div>
 
+                <!-- Grid Item 2 -->
+                <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+                    <img src="images/gonggi/im1.jpg"
+                         alt="Sculpture 2" 
+                         class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                        <h3 class="text-xl font-display font-semibold text-white">LED Matrix</h3>
+                    </div>
+                </div>
+
+                <!-- Grid Item 3 -->
+                <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+                    <img src="images/gonggi/im2.jpg"
+                         alt="Sculpture 3" 
+                         class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                        <h3 class="text-xl font-display font-semibold text-white">Neon Dreams</h3>
+                    </div>
+                </div>
+
+                <!-- Grid Item 4 -->
+                <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+                    <img src="images/gonggi/im3.jpg"
+                         alt="Sculpture 4" 
+                         class="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
+                        <h3 class="text-xl font-display font-semibold text-white">Digital Forest</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -96,7 +117,7 @@
     <script>
         loadComponent('header', 'header');
         loadComponent('footer', 'footer');
-        setActiveNavLink('index.html'); // Change this to 'about.html' or 'faq.html' for respective pages
+        setActiveNavLink('gonggi.html');
     </script>
     <script src="js/script.js"></script>
 </body>
